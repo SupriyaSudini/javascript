@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Title</title>
+</head>
+
+<body>
+<h1>Strings - String Objects</h1>
+<script>
+    var s1="Welcome to Strings in 'JavaScript'";
+    document.writeln("DOUBLE QUOTED STRING: ",s1,"<br>");
+    var s2='String with single Quote with "Double Quotations in it"';
+    document.writeln("SINGLE QUOTED STRING: ",s2,"<br>");
+    document.writeln(typeof s2,"<br>");
+    var s3 = new String("This is String Object<br>");
+    document.writeln("STRING OBJECT: ", s3);
+    document.writeln(typeof s3,"<br>");
+
+    document.writeln("<h1>String Methods</h1>");
+    document.writeln("<h2>");
+    document.writeln("s1 = ",s1, "<br> s2 = ",s2,"<br> s3 = ",s3 );
+
+    document.writeln("indexOf() - position of z in s1 is ", s1.indexOf("z"),"<br>");
+    document.writeln("indexOf() - position of o in s1 is ", s1.indexOf("o"),"<br>");
+    document.writeln("last indexOf() - position of o in s1 is ", s1.lastIndexOf("o"),"<br>");
+    document.writeln("indexOf() with one argument - position of o in s1 is ", s1.indexOf("o",6),"<br>");
+    document.writeln("serach() of o: - ",s1.search("o"),"<br>");
+    document.writeln("slice() - Extracting from s1: ",s1.slice(0,6),"<br>");
+    document.writeln("slice() - Extracting from s1 with negative index: ",s1.slice(0,-6),"<br>");
+    document.writeln("substring() - Extracting from s1 : ",s1.substring(0,17),"<br>");
+ // difference between slice and substring is slice accepts negative index but 
+ // substring won't
+  // substr() also accepts the negative indexes 
+  document.writeln("substr() - Extracting from s1: ",s1.substr(0,6),"<br>");
+  document.writeln("replace() - Replacing s in s1: ",s1.replace("JavaScript", "JS"),"<br>");
+
+  var s4 ="welcome to javascript";
+  var s5 = s4.toUpperCase();
+  document.write(s5,"<br>");
+  document.write(s5.toLowerCase(),"<br>");
+  var s6="Hello!";
+  document.write(s6.concat(s4),"<br>");
+
+  var s7="   Java Script   ";
+  document.writeln("LENGTH OF S7 : ",s7.length,"<br>");
+  var s8 = s7.trim();
+  document.writeln("LENGTH OF S8 : ",s8.length,"<br>");
+
+  document.writeln("charAt() - ", s1.charAt(5),"<br>");
+  document.writeln("s1 length: ", s1.length,"<br>");
+  document.writeln("charAt() - ", s1.charAt(39),"<br>");
+
+  document.writeln("charCodeAt() - ", s1.charCodeAt(5),"<br>");
+
+  // for accessing each character
+  for(i=0;i<s8.length;i++){
+    document.writeln(s8[i]+"<br>");
+  }
+</script>
+
+</body>
+</html>

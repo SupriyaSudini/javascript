@@ -1,0 +1,58 @@
+<<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <title>Title</title>
+<style>
+     #text{
+        color:rgb(255, 0, 119);     }
+</style>
+
+</head>
+
+<body>
+<h1>
+    Change the content By using Javascript
+</h1>
+<h2 id = "content">Hello Javascript</h2>
+<h3>All the Best for your Preparation</h3>
+
+<button type ="button" 
+onclick='document.getElementById("content").innerHTML="Hi Supriya"'>Supriya </button>
+
+<hr>
+<h1>Change the Attributes</h1>
+<img id="image" src="red.jpg" width="100" height="100"><br><br>
+
+<button type="button" 
+onclick='document.getElementById("image").src="parrot.jpg" '>Parrot</button>
+
+<button type="button" 
+onclick='document.getElementById("image").src="flower.jpg" '>Flowers</button>
+
+<hr>
+
+<h1>Change the CSS</h1>
+<h2 id="text">CSS Change Color </h2>
+<button type="button" 
+onclick='document.getElementById("text").style.color="green" '>Green</button>
+
+<button type="button" 
+onclick='document.getElementById("text").style.color="blue" '>Blue</button>
+
+<hr>
+
+<h1>Hide and Display</h1>
+<h2 id="hideDisplay"> The content can be displayed and can be hide using the below buttons></h2>
+<button type="button" 
+onclick='document.getElementById("hideDisplay").style.display="none"'>Hide</button>
+
+<button type="button" 
+onclick='document.getElementById("hideDisplay").style.display="block"'>Display</button>
+
+
+</body>
+</html>

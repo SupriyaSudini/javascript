@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+   <link rel="stylesheet" href="style.css">
+
+    <title>Title</title>
+</head>
+
+<body>
+
+<h1>Number objects</h1>
+<script>
+    var x=15;
+    var n= 3.789654;
+    var y = new Number(15); 
+    var z = new Number(15);
+    var s = x.toString();
+    var e = x.toExponential(3);
+    var f = n.toFixed(4);
+    var p = n.toPrecision(3);
+
+    document.writeln("Type of X: " +typeof x+"<br>");
+    document.writeln("Type of Y: " +typeof y+"<br>");
+    document.writeln("Type of Z: " +typeof z+"<br>");
+    document.writeln("Type of S: " +typeof s+"<br>");
+    document.writeln("X==Y:" +(x==y)+"<br>");
+    document.writeln("X===Y:"+(x===y)+"<br>");
+    document.writeln("Y==Z:"+(y==z)+"<br>");
+
+    document.writeln("to Exponential Function: "+e+ "<br>");
+    document.writeln("to Fixed Function: " +f+ "<br>");
+    document.writeln("to Precision Function: "+p+ "<br>");
+
+    // result of this number methods are in string format
+    document.writeln("Type of P: "+typeof p+ "<br>");
+    document.writeln("Type of E: "+typeof e+ "<br>");
+   
+      // converting to numbers 
+    var a = Number(e);
+    var b= parseInt(f);
+    var c = parseFloat(f);
+
+    document.writeln("Type of A: "+typeof a+ "<br> Value of a "+a+ "<br>" );
+    document.writeln("Type of B: "+typeof b+ "<br> Value of b "+b+ "<br>");
+    document.writeln("Type of c: "+typeof c+ "<br> Value of c "+ c+"<br>");
+
+
+    document.writeln("<h1>Number Properties</h1>");
+    document.writeln("MIN_VALUE: "+Number.MIN_VALUE+"<br>");
+    document.writeln("MAX_VALUE: "+Number.MAX_VALUE+"<br>");
+    document.writeln("POSITIVE_INFFINITY: "+Number.POSITIVE_INFINITY+"<br>");
+    document.writeln("NEGATIVE_INFFINITY: "+Number.NEGATIVE_INFINITY+"<br>");
+    document.writeln("NOT A NUMBER: "+Number.NaN+"<br>");
+
+
+
+
+
+</script>
+</body>
+</html>

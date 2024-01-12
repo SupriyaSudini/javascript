@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+   <link rel="stylesheet" href="style.css">
+
+    <title>Title</title>
+</head>
+
+<body>
+
+    <h1>Get Methods in Date Object</h1>
+    <script>
+        var d = new Date();
+        document.write(d +"<br>");
+
+        document.writeln("Year = "+d.getFullYear()+"<br>");
+        document.writeln("Month = "+d.getMonth()+"<br>");
+        document.writeln("Date = "+d.getDate()+"<br>");
+        document.writeln("Day = "+d.getDay()+"<br>");
+        document.writeln("Hours = "+d.getHours()+"<br>");
+        document.writeln("Minutes = "+d.getMinutes()+"<br>");
+        document.writeln("Seconds = "+d.getSeconds()+"<br>");
+        document.writeln("MilliSeconds = "+d.getMilliseconds()+"<br>");
+        document.writeln("Time = "+d.getTime()+"<br>");
+
+
+        document.write("<h2>Set Methods in Date Object</h2>");
+        var d1=new Date();
+        document.write(d1+"<br>");
+        d1.setDate(28);
+        document.writeln("New Date = <br>"+d1+"<br>");
+
+        d1.setMonth(11);
+        document.writeln("New Month = <br>"+d1+"<br>");
+
+        d1.setFullYear(2020,2);
+        document.writeln("New Year= <br>"+d1+"<br>");
+
+        d1.setHours(2);
+        document.writeln("New Date = <br>"+d1+"<br>");
+
+        d1.setMinutes(30);
+        document.writeln("New Date = <br>"+d1+"<br>");
+
+        d1.setSeconds(2);
+        document.writeln("New Date = <br>"+d1+"<br>");
+
+        d1.setMilliseconds(4000);
+        document.writeln("New Date = <br>"+d1+"<br>");
+
+
+        d1.setTime(10000000000);
+        document.writeln("New Date = <br>"+d1+"<br>");
+
+        d1.setTime(-10000000);
+        document.writeln("New Date = <br>"+d1+"<br>");
+
+    </script>
+</body>
+</html>
